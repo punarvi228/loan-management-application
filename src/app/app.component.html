@@ -6,12 +6,15 @@
   </header>
   <section class="w-100 d-flex flex-row">
     <aside class="w-25 h-100 border-right-1">
-      <app-sidebar></app-sidebar>
+      <app-sidebar *ngIf = "true"></app-sidebar>
     </aside>
     <main class="w-75 h-100">
       <router-outlet></router-outlet>
     </main>
   </section>
+  <footer>
+    <app-footer></app-footer>
+  </footer>
 </div>
  
 

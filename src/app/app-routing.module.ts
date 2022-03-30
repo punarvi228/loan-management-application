@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'payments', loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule) },
   { path: 'invoices', loadChildren: () => import('./invoices/invoices.module').then(m => m.InvoicesModule) }, 
   { path: 'loans', loadChildren: () => import('./loans/loans.module').then(m => m.LoansModule) },
+  { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
   {path:"**",component:PageNotFoundComponent} 
   ];
 
